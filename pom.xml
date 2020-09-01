@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vln</groupId>
-	<artifactId>JunitCourse</artifactId>
+	<artifactId>JunitWithMockito</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>JunitCourse</name>
+	<name>JunitWithMockito</name>
 	<description>Junit project for Spring Boot</description>
 
 	<properties>
