@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.java.mockito.service.TodoService;
 
-public class TodoBusinessImpl {
+public class TodoBusinessImpl  {
 
 	private TodoService todoService;
 
@@ -24,6 +24,16 @@ public class TodoBusinessImpl {
 		}
 
 		return filteredTodos;
+	}
+	
+	public void deleteTodoNotRelatedToSpring(String user) {
+		List<String> todos = todoService.retrieveTodos(user);
+
+		for (String todo : todos) {
+			if (!todo.contains("Spring")) {
+				todoService.deleteTodo(todo);
+			}
+		}
 	}
 
 }
